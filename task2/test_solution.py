@@ -1,7 +1,6 @@
 import os
 import csv
 import pytest
-import asyncio
 from task2.solution import get_animals_count
 
 @pytest.mark.asyncio
