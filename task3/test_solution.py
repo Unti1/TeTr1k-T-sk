@@ -1,5 +1,5 @@
 import pytest
-from solution import appearance
+from task3.solution import appearance
 
 def test_appearance():
     tests = [

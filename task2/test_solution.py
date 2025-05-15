@@ -1,10 +1,13 @@
 import os
 import csv
-from solution import get_animals_count
+import pytest
+import asyncio
+from task2.solution import get_animals_count
 
-def test_beasts_file_creation():
+@pytest.mark.asyncio
+async def test_beasts_file_creation():
     # Запускаем функцию
-    get_animals_count()
+    await get_animals_count()
     
     # Проверяем, что файл создан
     assert os.path.exists('beasts.csv')
